@@ -1,0 +1,274 @@
+[data-tab-content] {
+    display: none;
+}
+html {  
+    scroll-behavior: smooth;  
+}
+.active[data-tab-content]{
+    display: block;
+}
+body{
+    --nav-height: 50px;
+  
+    padding-top: var(--nav-height);
+    padding: 0;
+    margin: 0;
+    background-color: #0a192f;
+}
+
+
+
+
+
+  .main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+   
+    background-color: #0a192f;
+    color : #8892b0
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+.data-tab-target{
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.data-tab-target:hover{
+    background-color: #aaa;
+}
+.projects{
+    background-image: url(img/back1.jpg);
+    padding: 0px;
+    margin: 0px;
+
+}
+.tab-content{
+    margin: 0px;
+    padding: 0px;
+}
+.aboutme{
+    background-image: url(img/back1.jpg);
+    padding: 0px;
+    margin: 0px;
+}
+
+  .nav {
+    top: 0;
+    margin: 0px;
+    width: 100%;
+    height: var(--nav-height);
+    position: fixed;
+    
+    background-color: #0a192f;;
+    color: #64ffda;
+    text-align: right;
+    
+    
+    transition: transform 0.2s;
+  }
+  
+  .nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+  }
+  
+  .nav__link {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: 15px;
+    color: #64ffda;
+    text-decoration: none;
+   
+    font-weight: bold;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a192f;
+    
+    
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .intro{
+
+   margin-left: 10px;
+   margin-top: 160px;
+   background-color: #0a192f;
+  }
+  .hi{
+      margin-top: 50px;
+      color: #64ffda;
+      font-size: 20px;
+  }
+  .about{
+      margin-right: 300px;
+      margin-bottom: 10px;
+  }
+  .name{
+      margin-top: 20px;
+      color: #ccd6f6;
+      margin-bottom: 0;
+  }
+.asp{
+    margin-top: 20px;
+    color: #6b7db9;
+}
+.res{
+    margin-top: 40px;
+    width: 150px;
+  border: 3px solid #ccd6f6;
+  padding: 10px;
+  margin-bottom: 275px;
+  text-align: center;
+  color: #ccd6f6;
+  background-color: #0a192f;
+}
+.me{
+
+    margin-left: 10px;
+    
+    background-color: #0a192f;
+   }
+.me{
+    margin-left: 60px;
+}
+.titlea{
+    
+    color: #64ffda;
+    font-size: 30px;
+}
+.p1{
+    margin-top: 20px;
+}
+.p2{
+
+}
+.p3{
+    
+}
+.techlist{
+    padding-left:  20px;
+    margin: 0px;
+}
+.col{
+    float: left;
+    padding-left: 0;
+    padding-right: 150px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.proj{
+    
+}
+.proj_title{
+    text-align: center;
+    color: #64ffda;
+}
+.contact{
+    font-size: 20px;
+    text-align: center;
+    color: #64ffda; 
+    margin-bottom: 20px;
+}
+
+
+.pic{
+    margin-top: 0px;
+    width: 300px;
+  border: 3px solid #2a4772;
+  padding: 10px;
+  height: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ccd6f6;
+  background-color: #163464;
+}
+.col2{
+    float: left;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.row2::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.proj_block{
+    margin-left: 120px;
+    margin-bottom: 200px;
+}
+.pic2{
+    margin-top: 0px;
+    width: 800px;
+  border: 3px solid #2a4772;
+  padding: 10px;
+  height: 200px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #ccd6f6;
+  background-color: #2a4772;
+}
+.proj_title2{
+    text-align: center;
+    font-size: 15px;
+    color: #ccd6f6;
+    
+}
+.learn_more{
+    margin-top: 80px;
+    font-size: 20px;
+}
+.desc{
+    margin-top: 10px;
+    color: #6b7db9;
+}
+
+.abc{
+    text-align: center;
+    color: #64ffda;
+    border: 3px solid #64ffda;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 20px;
+}
+.link{
+    margin-top: 40px;
+    margin-bottom: 300px;
+}
