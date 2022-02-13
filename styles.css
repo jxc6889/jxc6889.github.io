@@ -141,10 +141,37 @@ section{
     font-size: 3em;
     font-weight: 200;
 }
-.intro-img{
-    min-width: 150px;
-        max-width: 300px;
+.intro{
+    display: grid;
+    grid-column-gap: 1em;
+    width: min-content;
+    margin:0 auto;
+    grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
 }
+.intro-img{
+    grid-area: img;
+    min-width: 200px;
+    max-width: 200px;
+    position: relative;
+    z-index: 2;
+}
+.intro-title strong{
+    text-align: right;
+}
+.intro-subtitle{
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    top: -1.5em;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+}
+
 .intro-title strong{
     display: block;
 }
@@ -322,7 +349,7 @@ input {
     border: 4px double black;
     color: black;
     text-align: center;
-    font-size: 28px;
+    font-size:28px;
     padding: 20px;
     width: 40%;
     -webkit-transition: all 0.5s;
@@ -350,7 +377,7 @@ label::after {
     color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
 }
-@media (min-width: 600px){
+@media (max-width: 1000px){
     .intro{
         display: grid;
         grid-column-gap: 1em;
@@ -380,5 +407,49 @@ label::after {
         top: -1.5em;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+    .send-message {
+        display: inline-block;
+       
+        border-radius: 10px;
+        border: 4px double black;
+        color: black;
+        text-align: center;
+        font-size: 10px;
+        padding: 20px;
+        width: 40%;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        position: absolute;
+        right: 0;
+        grid-area: submit;
+      }
+      .about{
+    
+        position: relative;
+        top: 30vh;
+        color: white;
+        display: block;
+        background-image: url(img/background.jfif);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.74);
+        background-blend-mode: multiply;
+        width: 100vw;
+        height: auto;
+        left: -10px;
+        
+    }
+    section{
+        padding: 2em .5em;
+       
+    }
+    .skill-des{
+        position: relative;
+        margin-top: 0;
+        font-size: 1.2em;
     }
 }
