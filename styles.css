@@ -16,9 +16,7 @@ body{
     
     
 }
-section{
-    padding: 5em 2em;
-}
+
 
 header{
     display: flex;
@@ -26,7 +24,7 @@ header{
     
 }
 .logo{
-    padding: 0;
+    padding: .5em 1em;
     margin: 0;
 }
 .pic{
@@ -128,9 +126,15 @@ header{
 strong{
     font-weight: 900;
 }
+section{
+    padding: 2em 2em;
+   
+}
 /*intro*/
 .intro{
+    
     position: relative;
+    top: 15vh;
 }
 .intro-title{
     margin-bottom: .25em;
@@ -138,8 +142,8 @@ strong{
     font-weight: 200;
 }
 .intro-img{
-    min-width: 200px;
-        max-width: 400px;
+    min-width: 150px;
+        max-width: 300px;
 }
 .intro-title strong{
     display: block;
@@ -150,8 +154,105 @@ strong{
     font-size: 2em;
     background: aqua;
 }
+.about{
+    
+    position: relative;
+    top: 30vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 35% 27% 27%;
+    gap: 2em;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "about skill1 skill2"
+        "about skill3 skill4"
+    ;
+    background-image: url(img/background.jfif);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 80vh;
+    left: -10px;
+    
+}
+.about-subtitle{
+    font-size: 1.2em;
+}
+.textholder{
+    grid-area: about;
+    padding: 2em;
 
+
+}
+.skillholder1{
+    position: relative;
+    grid-area: skill1;
+    border-top: 3px solid red;
+    padding: 1em;
+    
+}
+.skill-title1{
+    margin-top: 0;
+    color: red;
+}
+.skillholder2{
+    position: relative;
+    grid-area: skill2;
+    border-top: 3px solid green;
+    padding: 1em;
+}
+.skill-title2{
+    color: green;
+    margin-top: 0;
+}
+.skillholder3{
+    position: relative;
+    grid-area: skill3;
+    border-top: 3px solid aqua;
+    padding: 1em;
+    margin-top: 0;
+}
+.skill-title3{
+    color: aqua;
+    margin-top: 0;
+}
+.skillholder4{
+    position: relative;
+    grid-area: skill4;
+    border-top: 3px solid orange;
+    padding: 1em;
+}
+.skill-title4{
+    color: orange;
+    margin-top: 0;
+}
+.skill-subtitle{
+    font-size: 1.5em;
+
+}
+.skill-des{
+    position: absolute;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.contact-me{
+    color: aqua;
+    font-size: 1.2em;
+}
+
+
+.about-title{
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+}
+.project-title{
+    font-size: 3em;
+}
 .projects{
+    position: relative;
+    top: 30vh;
     text-align: center;
 }
 .gallery{
