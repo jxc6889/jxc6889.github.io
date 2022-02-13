@@ -22,5 +22,9 @@
             document.body.classList.remove('nav-open');
         })
     })
+    const press = document.getElementById("pressed");
+    function sent(){
+        press.innerHTML = "Thank You!";
+  }
 }
   
