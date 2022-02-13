@@ -131,16 +131,13 @@ section{
    
 }
 /*intro*/
+/*
 .intro{
     
     position: relative;
     top: 15vh;
 }
-.intro-title{
-    margin-bottom: .25em;
-    font-size: 3em;
-    font-weight: 200;
-}
+
 .intro{
     display: grid;
     grid-column-gap: 1em;
@@ -175,14 +172,56 @@ section{
     min-width: 150px;
         max-width: 300px;
 }
-.intro-title strong{
-    display: block;
+*/
+.intro-title{
+    margin-bottom: .25em;
+    font-size: 3em;
+    font-weight: 200;
+    
 }
 .intro-subtitle{
     margin-bottom: 1em;
     margin: 0;
     font-size: 2em;
     background: aqua;
+}
+
+.intro-title strong{
+    display: block;
+}
+
+
+.intro{
+    position: relative;
+   
+    display: grid;
+    grid-column-gap: 1em;
+    width: min-content;
+    margin:0 auto;
+    grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+}
+.intro-img{
+    grid-area: img;
+    min-width: 200px;
+    max-width: 200px;
+    position: relative;
+    z-index: 2;
+}
+.intro-title strong{
+    text-align: right;
+}
+.intro-subtitle{
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    top: -1.5em;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
 }
 .about{
     
@@ -382,34 +421,27 @@ label::after {
 }
 @media (max-width: 1000px){
     .intro{
-        display: grid;
-        grid-column-gap: 1em;
-        width: min-content;
-        margin:0 auto;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-            grid-template-columns: min-content max-content;
+        display: block;
+        width: auto;
+        padding: 2em 2em;
     }
     .intro-img{
         grid-area: img;
-        min-width: 200px;
-        max-width: 200px;
+        min-width: 300px;
+        max-width: 300px;
         position: relative;
         z-index: 2;
     }
     .intro-title strong{
-        text-align: right;
+        text-align: justify
     }
     .intro-subtitle{
-        align-self: start;
-        grid-column: -1/1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        top: -1.5em;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
+        
+        text-align: justify;
+        position: static;
+        margin-bottom: 1em;
+       
+        
     }
     .send-message {
         display: inline-block;
