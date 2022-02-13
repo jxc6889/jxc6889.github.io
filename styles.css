@@ -490,7 +490,7 @@ label::after {
     .intro{
         display: block;
         width: 80%;
-        padding: 2em 5em;
+        padding: 2em 4.5em;
     }
     .intro-title{
         font-size: 2.5em;
@@ -511,7 +511,7 @@ label::after {
         position: static;
         margin-bottom: 1em;
         font-size: 1.5em;
-        width: 58%;
+        width: 65%;
        
         
     }
