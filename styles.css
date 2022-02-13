@@ -171,7 +171,10 @@ section{
     left: -1.5em;
     width: calc(100% + 1.5em);
 }
-
+.intro-img{
+    min-width: 150px;
+        max-width: 300px;
+}
 .intro-title strong{
     display: block;
 }
@@ -286,7 +289,7 @@ section{
 .gallery{
     
     display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
  
 
 }
@@ -357,7 +360,7 @@ input {
     -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 5px 0px;
     position: absolute;
     right: 0;
     grid-area: submit;
@@ -444,12 +447,32 @@ label::after {
         
     }
     section{
-        padding: 2em .5em;
+        padding: 2em .25em;
        
     }
     .skill-des{
         position: relative;
         margin-top: 0;
         font-size: 1.2em;
+    }
+    .gallery{
+        gap: 1em;
+    }
+    .contact{
+        position: relative;
+        top: 40vh;
+        display: grid;
+        height: 40vh;
+        grid-template-columns: 47.5% 47.5% 5%;
+        gap: .5em 2em;
+        grid-template-rows: 20% 20% 30% 10% ;
+        grid-template-areas: 
+            "name email nothing"
+            "subject subject nothing"
+            "message message nothing"
+            "nothing submit nothing"
+            
+        ;
+    
     }
 }
